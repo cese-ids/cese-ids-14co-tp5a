@@ -6,7 +6,7 @@
  * Version: 0.1.0
  * Creation Date: 2019/06/21
  */
- 
+
 /*=====[Inclusion of own header]=============================================*/
 
 #include "alumnos.h"
@@ -34,6 +34,17 @@
 
 /*=====[Implementations of private functions]================================*/
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
+    char cadena[128];
+    
+    if (MatiasMeghinasso(cadena, sizeof(cadena)))
+    {
+        printf("Alumno: %s\r\n", cadena);
+    }
+    else
+    {
+        printf("No se pudo serializar el alumno\r\n");
+    }
     return 0;
 }
