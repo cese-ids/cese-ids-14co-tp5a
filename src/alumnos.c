@@ -6,7 +6,7 @@
  * Version: 0.1.0
  * Creation Date: 2019/06/21
  */
- 
+
 /*=====[Inclusion of own header]=============================================*/
 
 #include "alumnos.h"
@@ -32,18 +32,30 @@
 
 /*=====[Implementations of interrupt functions]==============================*/
 
-bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
+bool SerializarAlumno(char *cadena, size_t espacio, const alumno_t alumno)
+{
     int resultado;
     const char FORMATO[] = "{"
-        "\"documento\":\"%s\","
-        "\"apellidos\":\"%s\","
-        "\"nombres\":\"%s\""
-    "}";
+                           "\"documento\":\"%s\","
+                           "\"apellidos\":\"%s\","
+                           "\"nombres\":\"%s\""
+                           "}";
 
-    resultado = snprintf(cadena, espacio, FORMATO, 
-             alumno->documento, alumno->apellidos, alumno->nombres);
+    resultado = snprintf(cadena, espacio, FORMATO,
+                         alumno->documento, alumno->apellidos, alumno->nombres);
 
     return (resultado >= 0);
+}
+
+bool MatiasMeghinasso(char *cadena, size_t espacio)
+{
+    const struct alumno_s alumno = {
+        .apellidos = "Matias",
+        .nombres = "Matias Gino",
+        .documento = "36.806.968",
+    };
+
+    return SerializarAlumno(cadena, espacio, &alumno);
 }
 
 /*=====[Implementations of private functions]================================*/
