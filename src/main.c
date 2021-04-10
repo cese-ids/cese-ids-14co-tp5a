@@ -35,5 +35,12 @@
 /*=====[Implementations of private functions]================================*/
 
 int main(int argc, char *argv[]) {
+    char LucasOrsi_buffer[200] = {}; 
+
+    if (LucasOrsi(LucasOrsi_buffer, sizeof(LucasOrsi_buffer))) {
+        printf("Alumno: %s\r\n", LucasOrsi_buffer);
+    } else {
+        printf("No se pudo serializar el alumno\r\n");
+    }
     return 0;
 }
