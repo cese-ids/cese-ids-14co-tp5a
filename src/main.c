@@ -37,7 +37,6 @@
 int main(int argc, char *argv[]) {
 
 char cadena[120];
-    char cadena[128];
 
     if (AlejandroPermingeat(cadena, sizeof(cadena))) {
         printf("Alumno: %s\r\n", cadena);
