@@ -24,8 +24,8 @@ $(OUT_DIR):
 
 $(BIN_DIR): $(OUT_DIR)
 	@echo Creating output binaries folder
-	@mkdir $(BIN_DIR)
+#	@mkdir $(BIN_DIR)
 
 $(OBJ_DIR): $(OUT_DIR)
 	@echo Creating output objects folder
-	@mkdir $(OBJ_DIR)
+#	@mkdir $(OBJ_DIR)
