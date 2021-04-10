@@ -61,11 +61,9 @@ bool EstebanVolentini(char * cadena, size_t espacio);
 
 bool LucasOrsi(char * cadena, size_t espacio);
 
-<<<<<<< HEAD
 bool GermanVelardez(char * cadena, size_t espacio);
-=======
+
 bool JoseAlvarado(char * cadena, size_t espacio);
->>>>>>> 73d525274ee31f953a502521fdc39bae3135dd71
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
 
