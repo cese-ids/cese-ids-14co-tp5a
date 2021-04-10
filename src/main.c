@@ -45,6 +45,5 @@ char cadena[120];
     }
 
 
-
     return 0;
 }
