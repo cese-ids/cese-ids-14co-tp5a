@@ -36,10 +36,22 @@ typedef struct alumno_s {
 } const * alumno_t;
 
 /*=====[Definitions of public global variables]==============================*/
-
+char cadena[100];
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
+
+bool AlejandroRougier(char * cadena, size_t espacio);
+
+bool RodriguezOsvaldo(char * cadena, size_t espacio);
+
+bool IvanVargasMarza(char * cadena, size_t espacio);
+
+bool NicolasVargas(char * cadena, size_t espacio);
+
+bool FedericoMeghinasso(char * cadena, size_t espacio);
+
+bool MatiasMeghinasso(char * cadena, size_t espacio);
 
 bool MartinDuarte(char * cadena, size_t espacio);
 
@@ -49,7 +61,11 @@ bool EstebanVolentini(char * cadena, size_t espacio);
 
 bool LucasOrsi(char * cadena, size_t espacio);
 
+<<<<<<< HEAD
 bool GermanVelardez(char * cadena, size_t espacio);
+=======
+bool JoseAlvarado(char * cadena, size_t espacio);
+>>>>>>> 73d525274ee31f953a502521fdc39bae3135dd71
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
 

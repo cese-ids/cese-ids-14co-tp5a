@@ -6,7 +6,7 @@
  * Version: 0.1.0
  * Creation Date: 2019/06/21
  */
- 
+
 /*=====[Inclusion of own header]=============================================*/
 
 #include "alumnos.h"
@@ -32,18 +32,70 @@
 
 /*=====[Implementations of interrupt functions]==============================*/
 
-bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
+bool SerializarAlumno(char *cadena, size_t espacio, const alumno_t alumno)
+{
     int resultado;
     const char FORMATO[] = "{"
-        "\"documento\":\"%s\","
-        "\"apellidos\":\"%s\","
-        "\"nombres\":\"%s\""
-    "}";
+                           "\"documento\":\"%s\","
+                           "\"apellidos\":\"%s\","
+                           "\"nombres\":\"%s\""
+                           "}";
 
-    resultado = snprintf(cadena, espacio, FORMATO, 
-             alumno->documento, alumno->apellidos, alumno->nombres);
+    resultado = snprintf(cadena, espacio, FORMATO,
+                         alumno->documento, alumno->apellidos, alumno->nombres);
 
     return (resultado >= 0);
+}
+
+bool IvanVargasMarza(char * cadena, size_t espacio) {
+    const struct alumno_s alumno = {
+        .apellidos = "VARGAS",
+        .nombres = "Ivan",
+        .documento = "38.170.436",
+    };
+
+    return SerializarAlumno(cadena, espacio, &alumno);
+}
+
+bool RodriguezOsvaldo(char * cadena, size_t espacio) {
+    const struct alumno_s alumno = {
+        .apellidos = "RODRIGUEZ",
+        .nombres = "Osvaldo Antonio",
+        .documento = "15.123.345",
+        };
+    
+    return SerializarAlumno(cadena, espacio, &alumno);
+}
+
+bool NicolasVargas(char * cadena, size_t espacio) {
+    const struct alumno_s alumno = {
+        .apellidos = "VARGAS",
+        .nombres = "Nicolás",
+        .documento = "33.154.750",
+        };
+    
+        return SerializarAlumno(cadena, espacio, &alumno);
+    }
+
+bool FedericoMeghinasso(char * cadena, size_t espacio) {
+        const struct alumno_s alumno = {
+            .apellidos = "MEGHINASSO",
+            .nombres = "Federico Nicolas",
+            .documento = "35.229.281",
+        };
+
+        return SerializarAlumno(cadena, espacio, &alumno);
+    }
+
+bool MatiasMeghinasso(char *cadena, size_t espacio)
+{
+    const struct alumno_s alumno = {
+        .apellidos = "Matias",
+        .nombres = "Matias Gino",
+        .documento = "36.806.968",
+    };
+
+    return SerializarAlumno(cadena, espacio, &alumno);
 }
 
 bool MartinDuarte(char * cadena, size_t espacio) {
@@ -55,6 +107,16 @@ bool MartinDuarte(char * cadena, size_t espacio) {
 
     return SerializarAlumno(cadena, espacio, &alumno);
 }
+
+ bool AlejandroRougier(char * cadena, size_t espacio) {
+        const struct alumno_s alumno = {
+            .apellidos = "ROUGIER",
+            .nombres = "Omar Alejandro",
+            .documento = "22.661.059",
+        };
+
+        return SerializarAlumno(cadena, espacio, &alumno);
+    }
 
 bool AlejandroPermingeat(char * cadena, size_t espacio) {
     const struct alumno_s alumno = {
@@ -85,6 +147,7 @@ bool LucasOrsi(char * cadena, size_t espacio) {
     return SerializarAlumno(cadena, espacio, &alumno);
 }
 
+
 bool GermanVelardez(char * cadena, size_t espacio){
     const struct alumno_s alumno = {
         .apellidos = "Velardez",
@@ -93,6 +156,17 @@ bool GermanVelardez(char * cadena, size_t espacio){
     };
      return SerializarAlumno(cadena, espacio, &alumno);
 }
+
+bool JoseAlvarado(char * cadena, size_t espacio) {
+    const struct alumno_s alumno = {
+        .apellidos = "Alvarado",
+        .nombres = "Jose David",
+        .documento = "81.740.023",
+    };
+    return SerializarAlumno(cadena, espacio, &alumno);
+}
+
+/*=====[Implementations of private functions]================================*/
 
 
 bool JosueElias(char * cadena, size_t espacio) {
@@ -104,6 +178,8 @@ bool JosueElias(char * cadena, size_t espacio) {
     return SerializarAlumno(cadena, espacio, &alumno);
 }
 
+
 /*=====[Implementations of private functions]================================*/
+
 
 /*=====[Implementations of private functions]================================*/
