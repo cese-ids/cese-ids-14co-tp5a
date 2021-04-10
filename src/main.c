@@ -9,10 +9,6 @@
 
 /*=====[Inclusion of own header]=============================================*/
 
-
-
-
-
 #include "alumnos.h"
 #include <stdio.h>
 
@@ -42,12 +38,6 @@
 
 int main(int argc, char *argv[]) {
     char cadena[128];
-
-    if (AlejandroRougier(cadena, sizeof(cadena))) {
-        printf("Alumno: %s\r\n", cadena);
-    } else {
-        printf("No se pudo serializar el alumno\r\n");
-    }
     
     if (RodriguezOsvaldo(cadena, sizeof(cadena))) {
         printf("Alumno: %s\r\n", cadena);
@@ -110,28 +100,6 @@ int main(int argc, char *argv[]) {
         printf("No se pudo serializar el alumno\r\n");
     }
 
-<<<<<<< HEAD
-    if (GermanVelardez(cadena, sizeof(cadena))) {
-        printf("Alumno: %s\r\n", cadena);
-    } else {
-        printf("No se pudo serializar el alumno\r\n");
-    }
-
-
-
-
-
-
-
-
-
-    if (GermanVelardez(cadena, sizeof(cadena))) {
-        printf("Alumno: %s\r\n", cadena);
-    } else {
-        printf("No se pudo serializar el alumno\r\n");
-    }
-
-=======
     if (JoseAlvarado(cadena, sizeof(cadena)))
     {
         printf("Alumno: %s\r\n", cadena);
@@ -140,7 +108,6 @@ int main(int argc, char *argv[]) {
     {
         printf("No se pudo serializar el alumno\r\n");
     }
->>>>>>> 73d525274ee31f953a502521fdc39bae3135dd71
 
     return 0;
 }
