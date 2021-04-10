@@ -36,11 +36,11 @@ typedef struct alumno_s {
 } const * alumno_t;
 
 /*=====[Definitions of public global variables]==============================*/
-
+char cadena[100];
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
-
+bool NicolasVargas(char * cadena, size_t espacio);
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
 
 /*=====[C++ - end]===========================================================*/
