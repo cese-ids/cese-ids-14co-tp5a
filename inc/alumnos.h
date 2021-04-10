@@ -43,6 +43,8 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
 bool RodriguezOsvaldo(char * cadena, size_t espacio);
 
+bool IvanVargasMarza(char * cadena, size_t espacio);
+
 bool NicolasVargas(char * cadena, size_t espacio);
 
 bool FedericoMeghinasso(char * cadena, size_t espacio);
