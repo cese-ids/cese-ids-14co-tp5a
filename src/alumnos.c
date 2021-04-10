@@ -87,14 +87,14 @@ bool LucasOrsi(char * cadena, size_t espacio) {
 
 bool GermanVelardez(char * cadena, size_t espacio){
     const struct alumno_s alumno = {
-        .apellidos = "VOLENTINI",
-        .nombres = "Esteban Daniel",
-        .documento = "23.517.968",
+        .apellidos = "Velardez",
+        .nombres = "German Gabriel",
+        .documento = "37165604",
     };
      return SerializarAlumno(cadena, espacio, &alumno);
 }
 
-/*=====[Implementations of private functions]================================*/
+
 bool JosueElias(char * cadena, size_t espacio) {
     const struct alumno_s alumno = {
         .apellidos = "Velardez",
@@ -103,4 +103,7 @@ bool JosueElias(char * cadena, size_t espacio) {
     };
     return SerializarAlumno(cadena, espacio, &alumno);
 }
+
+/*=====[Implementations of private functions]================================*/
+
 /*=====[Implementations of private functions]================================*/
