@@ -46,6 +46,16 @@ bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno) {
     return (resultado >= 0);
 }
 
+bool AlejandroPermingeat(char * cadena, size_t espacio) {
+    const struct alumno_s alumno = {
+        .apellidos = "PERMINGEAT",
+        .nombres = "Alejandro",
+        .documento = "00.000.000",
+    };
+
+    return SerializarAlumno(cadena, espacio, &alumno);
+}
+
 bool EstebanVolentini(char * cadena, size_t espacio) {
     const struct alumno_s alumno = {
         .apellidos = "VOLENTINI",
