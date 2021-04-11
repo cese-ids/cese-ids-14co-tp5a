@@ -99,7 +99,7 @@ bool FedericoMeghinasso(char * cadena, size_t espacio) {
 bool MatiasMeghinasso(char *cadena, size_t espacio)
 {
     const struct alumno_s alumno = {
-        .apellidos = "Matias",
+        .apellidos = "MEGHINASSO",
         .nombres = "Matias Gino",
         .documento = "36.806.968",
     };
