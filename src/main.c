@@ -34,12 +34,12 @@
 
 /*=====[Implementations of private functions]================================*/
 
-  
+
 
 int main(int argc, char *argv[]) {
-        
+
     char cadena[128];
-    
+
     if (FrancoGeronimo(cadena, sizeof(cadena))) {
     printf("Alumno: %s\r\n", cadena);
     } else {
@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
     } else {
         printf("No se pudo serializar el alumno\r\n");
     }
-    
+
     if (IvanVargasMarza(cadena, sizeof(cadena))) {
            printf("Alumno: %s\r\n", cadena);
     } else {
@@ -66,14 +66,14 @@ int main(int argc, char *argv[]) {
 
     if (NahuelFigueroa(cadena, sizeof(cadena))) {
         printf("Alumno: %s\r\n", cadena);
-    } else {
-        printf("No se pudo serializar el alumno\r\n");
-    }
-
-    if (AlejandroPermingeat(cadena, sizeof(cadena))) {
+        } else {
+            printf("No se pudo serializar el alumno\r\n");
+        }
+        
+        if (AlejandroPermingeat(cadena, sizeof(cadena))) {
         printf("Alumno: %s\r\n", cadena);
     } else {
-        printf("No se pudo serializar el alumno\r\n");
+            printf("No se pudo serializar el alumno\r\n");
     }
 
     if (EstebanVolentini(cadena, sizeof(cadena))) {
@@ -94,7 +94,7 @@ int main(int argc, char *argv[]) {
     } else {
         printf("No se pudo serializar el alumno\r\n");
     }
-    
+
     if (MatiasMeghinasso(cadena, sizeof(cadena)))
     {
         printf("Alumno: %s\r\n", cadena);
