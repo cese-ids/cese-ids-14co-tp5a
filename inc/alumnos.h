@@ -61,7 +61,6 @@ bool AlejandroPermingeat(char * cadena, size_t espacio);
 
 bool EstebanVolentini(char * cadena, size_t espacio);
 
-
 bool NahuelFigueroa(char * cadena, size_t espacio);
 
 bool LucasOrsi(char * cadena, size_t espacio);
